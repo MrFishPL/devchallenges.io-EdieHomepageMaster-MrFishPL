@@ -1,17 +1,16 @@
+body {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  color: #4F4F4F;
+}
+
+/* I removed .default-p class and put the styling in body selector */
+
 .default-h2 {
     font-weight: 500;
     font-size: 2.25em;
     color: #333;
-    font-family: 'Poppins';
-    font-style: normal;
-}
-
-.default-p {
-    font-weight: 500;
-    font-size: 1em;
-    color: #4F4F4F;
-    font-family: 'Poppins';
-    font-style: normal;
 }
 
 .edie {
