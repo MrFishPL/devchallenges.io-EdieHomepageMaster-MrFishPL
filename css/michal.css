@@ -88,8 +88,10 @@
   padding: 4px;
   background-color: #F2F2F2;
   border-radius: 12px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto;
   font-weight: 500;
+  width: 100%;
 }
 
 .contact-section > form > input[type=submit] {
@@ -98,6 +100,11 @@
   color: #fff;
   font-size: 1.125em;
   border-radius: 12px;
+  transition: .2s background-color;
+}
+
+.contact-section > form > input[type=submit]:hover {
+  background-color: #288dc7;
 }
 
 .contact-section > form > input[type=email]::placeholder {
@@ -105,6 +112,82 @@
 }
 
 .contact-section > form > input[type=email] {
-  margin-left: 17px;
+  padding-left: 17px;
   outline: none;
+  width: 100%;
+}
+
+.offer-section {
+  padding: 200px 165px;
+}
+
+.offer-section > h2 {
+  font-size: 2.25em;
+  font-weight: 500;
+  width: min(100%, 400px);
+  line-height: 1.3em;
+}
+
+.cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 42px;
+}
+
+.offer-card {
+  padding: 46px 34px;
+  border-radius: 24px;
+  transition: box-shadow .2s;
+}
+
+.offer-card:hover {
+  box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+}
+
+.offer-card > span {
+  display: block;
+  width: 67px;
+  height: 67px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  border-radius: 16px;
+  font-size: 2em;
+}
+
+.offer-card > h3 {
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-top: 35px;
+}
+
+.offer-card > p {
+  margin-top: 24px;
+  margin-bottom: 30px;
+  line-height: 1.3em;
+}
+
+.offer-card > a {
+  padding: 9px 13px;
+  background-color: #E0E0E0;
+  border-radius: 12px;
+  font-weight: 500;
+  color: #828282;
+  transition: .2s background-color, .2s color;
+}
+
+.red { background-color: #EB5757; }
+.green { background-color: #27AE60; }
+.blue { background-color: #2D9CDB; }
+
+.offer-card:hover > a {
+  background-color: #2D9CDB;
+  color: #fff;
+}
+
+.offer-card > a:hover {
+  background-color: #288dc7;
 }
